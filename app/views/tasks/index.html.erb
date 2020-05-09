@@ -4,8 +4,8 @@
 <ul>
 <% @tasks.each do |task| %>
 
-<li><%= task.completed ? '☑ ' : '☐ ' %>
-  <%= link_to task.title.capitalize, task_path(task) %>
+<li><%= task.completed ? '☑ ' : '☐ ' %> •
+  <%= link_to task.title.capitalize, task_path(task) %> •
   <%= link_to "🗑️",
             task_path(task),
             method: :delete,
