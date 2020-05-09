@@ -1,6 +1,5 @@
-<h1>My tasks <%= link_to 'New Task', new_task_path, class: "btn btn-primary"%></h1>
-
-
+<h1>My tasks</h1>
+<%= link_to '➕New Task', new_task_path%>
 
 <ul>
 <% @tasks.each do |task| %>
