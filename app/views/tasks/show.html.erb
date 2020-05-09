@@ -1,7 +1,7 @@
 <h1><%= @task.title.capitalize %></h1>
 <p><%= @task.details.capitalize %></p>
 <p><%= @task.completed ? '☑ This task is completed' : "☐ This task isn't completed" %></p>
-<%= link_to 'Edit', edit_task_path(@task) %>
+<%= link_to 'Edit', edit_task_path(@task), class: "btn btn-primary" %>
 
 
 <%= link_to 'Back to list', tasks_path %>
