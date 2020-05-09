@@ -1,0 +1,11 @@
+<h1>My tasks</h1>
+
+<%= link_to 'New Task', new_task_path, class: "btn btn-primary"%>
+
+<ul>
+<% @tasks.each do |task| %>
+
+<li><%= task.completed ? '☑' : '☐' %> <%= link_to task.title.capitalize, task_path(task) %></li>
+<% end %>
+</ul>
+
